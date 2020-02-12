@@ -5,16 +5,16 @@ import pygame
 
 def Render(screen,planets):
     screen.fill((0,0,0))
-    pygame.draw.circle(screen,(255,0,0),planets[0],3)#draw Mercury
-    pygame.draw.circle(screen,(204,0,153),planets[1],5)#draw Venus
-    pygame.draw.circle(screen,(0,0,255),planets[2],6)#draw Earth
-    pygame.draw.circle(screen,(255,50,50),planets[3],5)#draw Mars
-    pygame.draw.circle(screen,(75,255,255),planets[4],9)#draw Jupiter
-    pygame.draw.circle(screen,(255,255,255),planets[5],7)#draw Saturn
-    pygame.draw.circle(screen,(20,20,255),planets[6],4)#draw Uranus
-    pygame.draw.circle(screen,(0,0,255),planets[7],5)#draw Neptune
-    pygame.draw.circle(screen,(200,200,200),planets[8],3)
-    pygame.draw.circle(screen,(255,255,0),(300,300),int(zoom/3))#draw Sun
+    pygame.draw.circle(screen,(255,0,0),planets[0],int(3*zoom/50))#draw Mercury
+    pygame.draw.circle(screen,(204,0,153),planets[1],int(5*zoom/50))#draw Venus
+    pygame.draw.circle(screen,(0,0,255),planets[2],int(6*zoom/50))#draw Earth
+    pygame.draw.circle(screen,(255,50,50),planets[3],int(5*zoom/50))#draw Mars
+    pygame.draw.circle(screen,(75,255,255),planets[4],int(9*zoom/50))#draw Jupiter
+    pygame.draw.circle(screen,(255,255,255),planets[5],int(7*zoom/50))#draw Saturn
+    pygame.draw.circle(screen,(20,20,255),planets[6],int(4*zoom/50))#draw Uranus
+    pygame.draw.circle(screen,(0,0,255),planets[7],int(5*zoom/50))#draw Neptune
+    pygame.draw.circle(screen,(200,200,200),planets[8],int(3*zoom/50))
+    pygame.draw.circle(screen,(255,255,0),(300,300),int(3*zoom/50))#draw Sun
     pygame.display.flip()
 
 def UpdatePlanets(planets,zoom = 200):
